@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #C9D8B6;
+    color: #515E63;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-right-gap {
+    margin: 0 180px 0 180px;
+}
+
+.header {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #515E63;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 20px;
+    position: fixed;
+    top: 50px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px 0;
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(1px);
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 35px;
+}
+
+.header:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+}
+
+.logo,
+.logo *,
+.navbar,
+.navbar * {
+    background: rgba(255, 255, 255, 0);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-afaik {
+    width: 40px;
+    height: 40px;
+    background-image: url(afaik.png);
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.line {
+    width: 200px;
+    height: 2px;
+    background-color: #515E63;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 20px;
+}
+
+.navbar * a .fa-solid {
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.navbar a:hover .fa-solid {
+    color: #57837B;
+    transform: translateY(-5px);
+}
+
+.banner {
+    margin-top: 180px;
+    width: 100%;
+    height: 200px;
+    background: url(cover.png);
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 0.5s;
+    border: 2px solid #515E63;
+}
+
+.banner:hover {
+    border-radius: 0;
+    box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+}
+
+.home {
+    margin-top: 30px;
+}
+
+.package {
+    margin-top: 80px;
+    text-align: center;
+    border: 1px solid #515E63;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.package:hover {
+    border-radius: 0;
+    box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(87, 131, 123, 0.5);
+    background-color: white;
+}
+
+.package h1 {
+    position: relative;
+    font-size: 35px;
+    top: -25px;
+    left: 42%;
+    width: fit-content;
+    padding: 3px 20px;
+    z-index: 1;
+    border: 1px solid #515E63;
+}
+
+.image-and-price {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0);
+}
+
+.half-body,
+.only-face,
+.full-body {
+    width: 200px;
+    height: 250px;
+}
+
+.half-body {
+    background: url(HB.png);
+    background-size: cover;
+}
+
+.only-face {
+    background: url(B.png);
+    background-size: cover;
+}
+
+.full-body {
+    background: url(FB.png);
+    background-size: cover;
+}
+
+.price-list {
+    /* background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(3px); */
+    border: 1px solid #515E63;
+    padding: 5px;
+    border-radius: 0 0 20px 20px;
+    transition: all 0.5s;
+}
+
+.price-list:hover {
+    border-radius: 0;
+    background: rgba(87, 131, 123, 0.2);
+}
+
+.price-list * {
+    background: rgba(255, 255, 255, 0);
+}
+
+.content-gap {
+    margin-top: 100px;
+}
+
+.data {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    align-items: center;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+.data * a .fa-solid,
+.data * a p,
+.data * a .fa-brands,
+.data * a p {
+    transition: all 0.3s;
+}
+
+.data * a:hover .fa-solid,
+.data * a:hover p,
+.data * a:hover .fa-brands,
+.data * a:hover p {
+    color: #57837B;
+}
+
+/* .data>div {
+    border: 1px solid yellow;
+} */
+
+.copy {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.copy p:hover {
+    color: #57837B;
+}
+
+.pat1 {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+}
+
+.p1 {
+    width: 400px;
+    height: 100px;
+    margin-left: 200px;
+    border-radius: 20px;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='20' patternTransform='scale(1) rotate(50)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M-4.798 13.573C-3.149 12.533-1.446 11.306 0 10c2.812-2.758 6.18-4.974 10-5 4.183.336 7.193 2.456 10 5 2.86 2.687 6.216 4.952 10 5 4.185-.315 7.35-2.48 10-5 1.452-1.386 3.107-3.085 4.793-4.176'  stroke-width='2.5' stroke='hsla(197, 10%, 35%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+}
